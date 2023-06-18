@@ -4,24 +4,79 @@ body {
 }
 .container {
 }
+
+.logo {
+  margin-left: 10rem;
+  margin-top: 5px;
+}
 .navBar {
+  position: fixed;
   display: flex;
-  flex-direction: row;
+  flex-direction: row wrap;
   line-height: 50px;
-  gap: 50px;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  z-index: 10;
+}
+
+.navSubContainer {
+  display: flex;
+  flex-direction: row-reverse wrap;
+  gap: 20px;
+  padding-right: 50px;
+  margin-right: 30px;
+}
+.navAnchor {
+  height: 30px;
+  width: 100px;
+  margin-top: 13px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.navAnchor:hover {
+  border-top: solid 2px #ff7a00;
 }
 
 .MainContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 .mainpic {
   width: 100%;
   height: 40rem;
+  max-height: 550px;
+  z-index: 1;
+  background-color: #fdb886;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("https://images.unsplash.com/photo-1606237906294-ae86d103d715?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmFybWluZyUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60");
 }
-.Footer {
+
+.shade {
+  max-height: 550px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  color: white;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.38);
 }
 
 .cardContainer {
@@ -35,13 +90,42 @@ body {
 .card {
 }
 .cardImg {
-  background-image: url("https://i.pinimg.com/474x/d3/59/30/d359309ef7a7ed78a1423d0aa08a3ea3.jpg");
   background-position: center 60%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 15em;
   height: 15em;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+.img1 {
+  background-image: url("https://i.pinimg.com/474x/d3/59/30/d359309ef7a7ed78a1423d0aa08a3ea3.jpg");
+}
+.img2 {
+  background-image: url("https://i.pinimg.com/474x/04/64/08/0464083b35584b045fe438009b8ed6d0.jpg");
+}
+.img3 {
+  background-image: url("https://i.pinimg.com/474x/84/89/e6/8489e694ff1e28053ad49deab53e917a.jpg");
+  background-position: center 100%;
+}
+.img4 {
+  background-image: url("https://i.pinimg.com/474x/b1/e2/e1/b1e2e10ff65968ee218d8f4ae6f52009.jpg");
+}
+.img5 {
+  background-image: url("https://i.pinimg.com/474x/5b/6b/00/5b6b0029cc12640b66c4e760d7e3a10e.jpg");
+}
+.img6 {
+  background-image: url("https://i.pinimg.com/474x/3d/77/ef/3d77eff5a25cc6cc62254b52f684f698.jpg");
+}
+
+.img7 {
+  background-image: url("https://i.pinimg.com/736x/51/5e/dd/515edd129688576f899b767e28d670f6.jpg");
+}
+.img8 {
+  background-image: url("https://i.pinimg.com/474x/c4/63/97/c4639715ce0d936342ada86e26c52793.jpg");
+}
+
+.Footer {
 }
 
 @media (min-width: 768px) {
