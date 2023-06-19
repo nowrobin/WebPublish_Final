@@ -4,6 +4,9 @@
   margin-left: 10rem;
   margin-top: 5px;
 }
+.hovered {
+  border-top: solid 2px #ff7a00;
+}
 .navBar {
   position: fixed;
   display: flex;
@@ -141,4 +144,49 @@
   color: rgb(61, 60, 60);
 }
 .Footer {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  background-color: #c8bab1;
+}
+.businessHours {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 100px;
+  width: 50%;
+  gap: 10px;
+}
+.contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 100px;
+  width: 50%;
+  gap: 10px;
+}
+.bold {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.infos {
+  width: 300px;
+  font-size: 12px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.hours {
+  font-size: 12px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
